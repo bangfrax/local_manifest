@@ -1,35 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-	<!-- Remotes -->
-	<remote name="clang" 
-		 fetch="https://gitlab.com/anandhan07/" />
-
-        <remote name="cosmic"
-		 fetch="https://gitlab.com/GhostMaster69-dev" />
-
-	<remote  name="Gitlab"
-	 	 fetch="https://gitlab.com/" />
-
-        <remote name="AnkitSavani"
-		 fetch="https://github.com/AnkitSavani111" />
-
-	<!-- Clang -->
- 	<!-- <project path="prebuilts/clang/host/linux-x86/clang-14" name="GhostMaster69-dev/Cosmic-Clang.git" remote="Gitlab" revision="master" clone-depth="1" /> -->
-        <project path="prebuilts/clang/host/linux-x86/clang-cosmic" name="Cosmic-Clang" remote="cosmic" revision="master" clone-depth="1" /> 
-	<!-- <project path="prebuilts/clang/host/linux-x86/clang-14" name="aosp-clang" remote="clang" revision="clang-14" clone-depth="1" /> -->
-	
-	<!-- Device side things -->
- 	<project path="device/xiaomi/vince" name="AnkitSavani111/android_device_xiaomi_vince" remote="github" revision="Evolution-X" />
- 	<project path="vendor/xiaomi/vince" name="AnkitSavani111/android_vendor_xiaomi_vince" remote="github" revision="Evolution-X" />
-        <project path="kernel/xiaomi/vince" name="GhostMaster69-dev/android_kernel_xiaomi_vince" remote="github" revision="12" />
-	
-	<!-- Packages 
-	<project path="packages/apps/CameraGo" name="GhostMaster69-dev/android_packages_apps_CameraGo" remote="github" revision="main" /> 
- 	<project path="packages/apps/FMRadio" name="GhostMaster69-dev/android_packages_apps_FMRadio" remote="github" revision="12" /> -->
-		
-	<!-- Sepolicy 
- 	<remove-project name="device_qcom_sepolicy-legacy-um" />
-	<project path="device/qcom/sepolicy-legacy-um" name="AnkitSavani111/android_device_qcom_sepolicy" remote="github" revision="evolution" /> -->
+ <!-- Trees -->
+ <project path="device/vince" name="rayrzy/android_device_xiaomi_vince.git" remote="github" revision="10" />
+ <project path="device/vince/msm8953-common" name="itsVixano/android_device_xiaomi_msm8953-common.git" remote="github" revision="lineage-17.1" />
+ <project path="vendor/vince" name="rayrzy/android_vendor_xiaomi_vince.git" remote="github" revision="10" />
+ <project path="kernel/vince" name="rayrzy/android_kernel_xiaomi_vince.git" remote="github" revision="windstorm" />
  
 </manifest>
